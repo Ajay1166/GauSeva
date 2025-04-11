@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4b665, #faf8f1);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #543A14, #e89427);
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        /* Navbar */
+  .navbar {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+}
+        .contact-container {
+            background: #FFF0DC;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            max-width: 1200px;
+            width: 95%;
+            margin: 10px auto;
+        }
+        .form-section {
+            padding: 40px;
+            width: 50%;
+        }
+        .form-section h1 {
+            color: #543A14;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .form-section p {
+            color: #543A14;
+            margin-bottom: 20px;
+        }
+        .form-section input, 
+        .form-section select, 
+        .form-section button {
+            width: 80%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        .form-section button {
+            background: #543A14;
+            width: 87%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .form-section button:hover {
+            background: #d43d57;
+        }
+        .map-section {
+            width: 50%;
+            background: url('cowcontact.jpg') no-repeat center center; 
+            background-size: cover;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            color: #543A14;
+            font-size: 0.9em;
+        }
+        footer {
+            background: #543A14;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .social-icons a:hover {
+            color: #d43d57;
+        }
+
+        .contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.contact-info i {
+    color: #543A14;
+    font-size: 1.6em;
+}
+
+@media screen and (max-width: 300px) {
+span.psw { display: block; float: none;
+}
+}
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="navbar">
+        <!-- Logo Image (Non-clickable) -->
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <img src="Lg.webp" alt="GauSeva Logo" class="logo-img"
+            style="
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              object-fit: cover;
+              object-position: center;
+              
+              box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+              transform: scale(1.2);
+            "
+          >
+          <span style="font-size: 28px; font-weight: bold; color: white;">
+            GauSeva
+          </span>
+        </div>
+        
+        
+        <!-- Navigation Links -->
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="donation/donate.html">Donate</a></li>
+            <li><a href="adopt.html">Adoption</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <center><h1 class="tagline">|| जय गौमाता ||</h1></center>
+     <!-- Contact Form Section -->
+    <div class="contact-container">
+        <div class="form-section">
+          <form action="contact.php" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Phone number" required>
+            <input type="text" name="message" placeholder="Message" required></input>
+            <button type="submit">Submit</button>
+          </form>
+          
+            <div class="contact-info">
+                <span><i class="fas fa-phone"></i> 03 5432 1234</span>
+                <span><i class="fas fa-fax"></i> 03 5432 1234</span>
+                <span><i class="fas fa-envelope"></i> info@example.com</span>
+            </div>
+            
+        </div>
+        <div class="map-section"></div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 My Website. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="#" title="Facebook">📘</a>
+            <a href="#" title="Instagram">📸</a>
+            <a href="#" title="Twitter">🐦</a>
+        </div>
+    </footer>
+
+    <script>
+      document.querySelector('form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+    
+        fetch('contact.php', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.text())
+        .then(message => {
+            alert(message);
+            document.querySelector('form').reset(); // Clear form after successful submission
+        })
+        .catch(error => {
+            alert('An error occurred. Please try again.');
+        });
+    });
+    
+    </script>
+</body>
+</html>
+
+

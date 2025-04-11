@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallerystyles.css">
+</head>
+<body>
+
+   <!-- Navbar Section -->
+   <header class="navbar">
+    <!-- Logo Image (Non-clickable) -->
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="Lg.webp" alt="GauSeva Logo" class="logo-img"
+        style="
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+          
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          transform: scale(1.2);
+        "
+      >
+      <span style="font-size: 28px; font-weight: bold; color: white;">
+        GauSeva
+      </span>
+    </div>
+    
+    
+    <!-- Navigation Links -->
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="donation/donate.html">Donate</a></li>
+        <li><a href="adopt.html">Adoption</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <center><h1 class="tagline">|| जय गौमाता ||</h1></center>
+    <div class="container text-center">
+      <h1>Our Gallery</h1>
+      <p>Glimpses into our work protecting cows, practicing sustainable farming, and building a compassionate community.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery">
+    <div class="container">
+      <!-- Categories -->
+      <div class="categories">
+        <button class="category-btn" onclick="filterImages('all')">All</button>
+        <button class="category-btn" onclick="filterImages('sanctuary')">Sanctuary</button>
+        <button class="category-btn" onclick="filterImages('farming')">Farming</button>
+        <button class="category-btn" onclick="filterImages('education')">Education</button>
+        <button class="category-btn" onclick="filterImages('products')">Products</button>
+        <button class="category-btn" onclick="filterImages('adoption')">Adoption</button>
+        <button class="category-btn" onclick="filterImages('volunteer')">Volunteers</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- Images will be injected here -->
+      </div>
+
+      <!-- No images message -->
+      <div id="no-images-message" class="no-images-message">
+        <p>No images found in this category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="image-modal" onclick="closeModal()">
+    <div class="modal-content">
+      <img id="modal-image" src="" alt="">
+    </div>
+  </div>
+
+  <!-- Footer (You can create your own footer structure here) -->
+  <footer>
+    <p>&copy; 2025 Gau Seva Hub. All rights reserved.</p>
+  </footer>
+
+  <script src="galleryscript.js"></script>
+</body>
+</html>

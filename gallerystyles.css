@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+   /* Navbar */
+   .navbar {
+    background-color: #4e3d26;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+  /* Hero Section */
+  .hero {
+    background-color: #F7E6D1;
+    padding: 50px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #7a4e3b;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Gallery Section */
+  .gallery {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Categories */
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .category-btn {
+    padding: 10px 20px;
+    background-color: #ff7e5f;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .category-btn:hover {
+    background-color: #d75948;
+  }
+  
+  .category-btn.active {
+    background-color: #7a4e3b;
+  }
+  
+  /* Gallery Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .gallery-item-info {
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .gallery-item-info h3 {
+    font-size: 1.1rem;
+    color: #7a4e3b;
+  }
+  
+  .gallery-item-info p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* No Images Message */
+  .no-images-message {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Modal */
+  .image-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+  }
+  
+  .modal-content img {
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+  }
+  
+  .image-modal.open {
+    display: flex;
+  }
+  
+  footer {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adopt A Cow</title>
+  <link rel="stylesheet" href="adoptstyles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <!-- Logo Image (Non-clickable) -->
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="Lg.webp" alt="GauSeva Logo" class="logo-img"
+        style="
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          object-fit: cover;
+          object-position: center;
+          
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+          transform: scale(1.2);
+        "
+      >
+      <span style="font-size: 28px; font-weight: bold; color: white;">
+        GauSeva
+      </span>
+    </div>
+    
+    
+    <!-- Navigation Links -->
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="donation/donate.html">Donate</a></li>
+        <li><a href="adopt.html">Adoption</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <h1 class="tagline">|| जय गौमाता ||</h1>
+  
+  <div class="j"><button class="back-btn">⬅ Back</button>
+    <h2>Adopt A Cow</h2>
+    <button class="adopted-btn">My Adopted Gauvanash</button></div>
+
+  <div class="filters">
+    <label>Category: 
+      <select>
+        <option>--All--</option>
+      </select>
+    </label>
+    <label>Breed: 
+      <select>
+        <option>--All--</option>
+      </select>
+    </label>
+    <div class="selected-count">0 Selected</div>
+  </div>
+
+  <!-- Carousel Section -->
+  <div class="carousel-container">
+    <button class="carousel-btn left">⬅</button>
+    <div class="cow-list">
+      <!-- Cards will be inserted dynamically with JavaScript -->
+    </div>
+    <button class="carousel-btn right">➡</button>
+  </div>
+
+  <footer>
+    <div class="total-cost">Total: ₹0</div>
+    <button class="preview-btn">Preview</button>
+  </footer>
+
+  <script src="adoptscript.js"></script>
+</body>
+</html>

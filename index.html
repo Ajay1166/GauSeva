@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GauSeva - Login & Signup</title>
+    <link rel="stylesheet" href="loginstyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #FFF0DC;
+        }
+        
+        .container {
+            display: flex;
+            width: 80%;
+            height: 80vh;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: white;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.6s ease-in-out;
+        }
+        
+        .left-section, .right-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+        }
+        
+        .left-section {
+            background: url('cowlogin.webp') center/cover no-repeat;
+            order: 1;
+        }
+        
+        .right-section {
+            background-color: #F0BB78;
+            order: 2;
+        }
+        
+        .container.switched .left-section {
+            order: 2;
+        }
+        
+        .container.switched .right-section {
+            order: 1;
+        }
+        
+        .form-container {
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+            transition: opacity 0.6s;
+        }
+
+        .form-container .signup-form {
+            display: none;
+        }
+
+        .form-container.show-signup .login-form {
+            display: none;
+        }
+
+        .form-container.show-signup .signup-form {
+            display: block;
+        }
+
+        h2 {
+            color: #543A14;
+        }
+
+        .input-box {
+            display: flex;
+            align-items: center;
+            background: #f1f1f1;
+            margin-bottom: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+        .input-box i {
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .input-box input {
+            border: none;
+            background: transparent;
+            outline: none;
+            width: 100%;
+        }
+
+        .forgot-password {
+            display: block;
+            text-align: right;
+            font-size: 0.8rem;
+            color: #543A14;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .social-login button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            width: 40px;
+            height: 40px;
+            font-size: 1.2rem;
+            transition: 0.3s;
+        }
+
+      
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="tagline">|| जय गौमाता ||</h1>
+    <div class="container">
+        <div class="left-section"></div>
+        <div class="right-section">
+            <div class="form-container">
+                <div class="login-form">
+                    <h2>Welcome</h2>
+                    <p>Login with Email</p>
+                    <form id="login-form" action="login.php" method="POST">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email" name="email" placeholder="Email Id" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" placeholder="Password" required>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot your password?</a>
+                        <button type="submit" class="toggle-btn">LOGIN</button>
+                        <p class="or-text">OR</p>
+                    <div class="social-login">
+                        <button class="google"><i class="fa-brands fa-google fa-beat"></i></button>
+                        <button class="facebook"><i class="fab fa-facebook fa-beat"></i></button>
+                        <button class="apple"><i class="fab fa-apple fa-beat"></i></button>
+                    </div>
+                    </form>
+                </div>
+                <div class="signup-form">
+                    <h2>Create Account</h2>
+                    <p>Sign up with Email</p>
+                    <form   id="signup-form" action="signup.php" method="POST">
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <input type="email"  name="email" placeholder="Email Id" required>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" name="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="toggle-btn">SIGN UP</button>
+                        <p class="or-text">OR</p>
+                    <div class="social-login">
+                        <button class="google"><i class="fa-brands fa-google fa-beat"></i></button>
+                        <button class="facebook"><i class="fab fa-facebook fa-beat"></i></button>
+                        <button class="apple"><i class="fab fa-apple fa-beat"></i></button>
+                    </div>
+                    </form>
+                </div>
+                <a href="#" class="register-toggle" id="register-link" onclick="toggleForm()">Don't have an account? Register Now</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="loginscript.js"></script>
+
+</body>
+</html>

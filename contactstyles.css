@@ -1,0 +1,281 @@
+/*body {
+    background-color: #FFF0DC;
+}
+
+img {
+    width: 100%;
+
+}
+
+h1 {
+    color: #131010;
+}
+
+#con {
+    color: #131010;
+}
+
+.row {
+    background-color: #F0BB78;
+}
+
+input {
+    border-radius: 2%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+footer {
+
+    background-color: #131010;
+}
+
+.footer {
+    background-color: #543A14;
+    color: white;
+    align-items: center;
+}*/
+
+/*2* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 20px;
+}
+
+
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+
+}
+
+td {
+    padding: 15px;
+}
+
+td img {
+    border-radius: 10px;
+}
+
+
+form {
+    font-size: 1.2em;
+    padding: 20px;
+    background-color: #FFF0DC;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #131010;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    background-color: #0e0c00;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+#con {
+    align: center;
+}
+
+.row {
+    background-color: #F0BB78;
+}
+
+body {
+    background-color: #FFF0DC;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f1eb;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    width: 90%;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 500px;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form form button {
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+    align-self: center;
+    transition: background 0.3s ease;
+}
+
+.contact-form form button:hover {
+    background: #333;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}

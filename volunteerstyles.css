@@ -1,0 +1,456 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF3E0;
+    color: #333;
+    text-align: center;
+}
+
+/* Header */
+/* Navbar */
+.navbar {
+    background-color: #4e3d26;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sections */
+section {
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Image */
+.section-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Benefits */
+.benefits {
+    background-color: #FF9800;
+    color: white;
+}
+
+.benefit-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    color: #FF6F00;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Form Section */
+.form-section {
+    background-color: white;
+    padding: 50px 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-section p{
+    color: #FF6F00;
+   
+}
+
+.form-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #FF6F00;
+    
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #FF6F00;
+   
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #FF6F00;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 111, 0, 0.7);
+}
+
+.input-group textarea {
+    resize: vertical; /* Allows users to resize the textarea vertically */
+}
+
+.btn {
+    background-color: #FF6F00;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FF9800;
+}
+
+#response-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #FF6F00;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .form-section {
+        width: 90%;
+    }
+}
+
+
+/* Testimonials */
+.testimonials {
+    background-color: #FF9800;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    color: #FF6F00;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.testimonial-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    float: left;
+}
+
+.testimonial-card p {
+    margin-left: 75px; /* Creates space for the image on the left */
+    font-size: 16px;
+}
+
+.testimonial-card p::before {
+    content: "“";
+    font-size: 2em;
+    color: #FF6F00;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.testimonial-card p::after {
+    content: "”";
+    font-size: 2em;
+    color: #FF6F00;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #FF6F00;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* Upcoming Events Section */
+.events {
+    background-color: #FF9800;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.events h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.event-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background: white;
+    color: #FF6F00;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #FF6F00;
+}
+
+.event-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.event-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-size: 16px;
+    color: #FF6F00;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-event {
+    background-color: #FF6F00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-event:hover {
+    background-color: #FF9800;
+}
+
+
+/* About Section */
+.about {
+    background-color: #FF9800;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    width: 45%;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-image {
+    width: 45%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mission Section */
+.mission {
+    background-color: #FF9800;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.mission-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* This ensures that on smaller screens, items wrap */
+}
+
+.mission-item {
+    background-color: white;
+    color: #FF6F00;
+    padding: 20px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-grow: 1; /* Allows the item to grow and take equal space */
+    min-width: 250px; /* Ensures the items don't get too small on smaller screens */
+}
+
+.mission-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.mission-item i {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.mission-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.mission-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text, .about-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .mission-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .mission-item {
+        width: 100%;
+    }
+}
+

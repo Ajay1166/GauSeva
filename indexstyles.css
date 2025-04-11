@@ -1,0 +1,322 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #4e3d26;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .navbar nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .navbar nav ul li {
+    margin-left: 20px;
+  }
+  
+  .navbar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+}
+  
+  /* Hero Section */
+  .hero {
+    background-color: #f4e1c1;
+    text-align: center;
+    padding: 100px 20px;
+    width: 100%;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    color: #4e3d26;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+  }
+  
+  /* Mission and Values Section */
+.mission-values {
+  background-color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  width: 100%;
+  background: #f9f7f1; /* Light beige background */
+  border-radius: 15px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.mission-values h2 {
+  font-size: 2.5rem;
+  color: #4e3d26;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.mission-values p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: #6f5b46; /* Slightly lighter color for the paragraph text */
+  line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 0 5%;
+  justify-items: center; /* Center cards within the grid */
+}
+
+/* Value Cards */
+.value-card {
+  background-color: #f8e9d4;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Ensures consistent card height */
+}
+
+.value-card:hover {
+  transform: translateY(-10px); /* Card lifts slightly when hovered */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Adds more shadow on hover */
+}
+
+/* Value Icon Animation */
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: float 3s ease-in-out infinite; /* Apply floating effect */
+}
+
+/* Floating Animation Keyframes */
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px); /* Move the icon up */
+  }
+  100% {
+      transform: translateY(0); /* Return to the original position */
+  }
+}
+
+/* Value Card Headings */
+.value-card h3 {
+  color: #4e3d26;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600; /* Bold for better emphasis */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mission-values {
+      padding: 60px 20px;
+  }
+
+  .value-card {
+      min-height: 250px; /* Ensures the cards are still a good height on mobile */
+  }
+
+  .value-icon {
+      font-size: 2.5rem; /* Slightly smaller icons on mobile */
+  }
+}
+
+  
+  /* Importance Section */
+  .importance-section {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 80px 20px;
+    width: 100%;
+  }
+  
+  .importance-section h2 {
+    font-size: 2.5rem;
+    color: #4e3d26;
+    margin-bottom: 20px;
+  }
+  
+  .importance-section p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    background-color: #f5a623;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: #d78b22;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #2d3a2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .values-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .mission-values h2,
+    .importance-section h2 {
+      font-size: 2rem;
+    }
+  }
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    color: #4e3d26;
+}
+
+.testimonials p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.testimonial-slider {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    background-color: #fdf7e3;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: none;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: #e67e22;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+    margin: 20px 0;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.testimonial-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #e67e22;
+}
+
+.testimonial-author strong {
+    font-size: 1rem;
+    color: #8d4b25;
+}
+
+.testimonial-author span {
+    font-size: 0.9rem;
+    color: #e67e22;
+}
+
+/* Slider Buttons */
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.slider-btn {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.slider-btn:hover {
+    background-color: #d35400;
+}
+  
